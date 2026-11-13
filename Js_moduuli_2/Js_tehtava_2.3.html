@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript tulos 2.3</title>
+</head>
+<h1>Js tehtävä 2.3: Koirat käänteisessä aakos järjestyksessä</h1>
+<ul id='koira'></ul>
+    <script>
+        'use strict';
+
+        //biologigly engineering dogs :P
+        let koirat=[]
+        const koira=document.querySelector('#koira')
+        alert('Nimeä 6 koiraa');
+        for (let i=1; i<=6; i++)
+            {koirat.push(prompt(`Anna ${i}. koiran nimi: `));}
+
+        console.log(koirat)
+        koirat.sort()
+        koirat.reverse()
+        console.log(koirat)
+
+        for (let i of koirat)
+            {koira.innerHTML+='<li>'+i+'</li>'}
+
+    </script>
+<body>
+
+</body>
+</html>

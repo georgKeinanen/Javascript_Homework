@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript tulos 1.3</title>
+</head>
+<body>
+    <h1>Js tehtävä 1.3: summa, tulo ja keskiarvo</h1>
+    <p id='sum'>Summa</p>
+    <p id='tulo'>Tulo</p>
+    <p id='avg'>Keskiarvo</p>
+    <script>
+        'use strict';
+        let luku1=parseInt(prompt('Anna ensinmäinen luku: '))
+        let luku2=parseInt(prompt('Anna toinen luku: '))
+        let luku3=parseInt(prompt('Anna viimeinen luku: '))
+
+        document.querySelector('#sum').innerHTML=`Lukujen summa: ${luku1+luku2+luku3}`;
+        document.querySelector('#tulo').innerHTML=`Lukujen tulo: ${luku1*luku2*luku3}`;
+        document.querySelector('#avg').innerHTML=`Lukujen keskiarvo: ${(luku1+luku2+luku3)/3}`;
+    </script>
+</body>
+</html>

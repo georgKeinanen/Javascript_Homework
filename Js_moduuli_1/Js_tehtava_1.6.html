@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascipt tulos 1.6</title>
+</head>
+<body>
+    <h1>Js tehtävä 1.6: Haluatko laskea neliöjuuren?</h1>
+    <p id='target'>vastaus</p>
+    <script>
+        'use strict';
+       let vastaus = confirm('<|:D <[Hmmmm... pitäiskö minun laskea luvun (jonka saatat antaa) neliöjuuri?]');
+       if (vastaus===true)
+            {let luku=parseInt(prompt('Anna luku: '))
+            document.querySelector('#target').innerHTML=`Luvun neliöjuuri: ${Math.sqrt(luku)}`;
+            console.log('<|:D');}
+
+
+       else
+        {document.querySelector('#target').innerHTML='selvä, en laske neliöjuurta.';
+        console.log('<|:/');}
+
+
+
+
+    </script>
+</body>
+</html>

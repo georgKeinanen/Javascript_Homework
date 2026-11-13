@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript tulos 2.4</title>
+</head>
+<body>
+<h1>Js tehtävä 2.4: Nollaa ei hyväksytä syötteenä</h1>
+  <ul id='lista-luku'></ul>
+  <script>
+    'use strict';
+
+    const lista_luku=document.querySelector('#lista-luku')
+    let luvut=[]
+    for(;;)
+      {let luku=parseInt(prompt('Anna luku, 0 lopettaa: '))
+      if (luku===0)
+      {break}
+      luvut.push(luku)}
+
+    luvut.sort((a,b) => a-b);
+    console.log(luvut)
+    for (let i of luvut)
+    {lista_luku.innerHTML+='<li>'+i+'</li>';}
+  </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript tulos 2.6</title>
+</head>
+<body>
+    <h1>Js tehtävä 2.6</h1>
+    <ul id='silmaluvut'></ul>
+    <script>
+        'use strict';
+        function heita_noppaa()
+            {return Math.floor(Math.random()*6)+1;}
+        //Paljon helpompaa olisi heittää noppaa pelkällä muuttujalla <|:/
+
+        const pip_count=document.querySelector('#silmaluvut')
+        let i=0
+        let pip_storage=[]
+        for(;;)
+            {//let pip_count=heita_noppaa()
+            pip_storage.push(heita_noppaa())
+
+            pip_count.innerHTML +='<li>'+pip_storage[i]+'</li>'
+            i+=1
+            if (pip_storage.includes(6)===true)
+                {break}}
+
+        console.log('worx');
+        console.log(pip_storage)
+    </script>
+</body>
+</html>

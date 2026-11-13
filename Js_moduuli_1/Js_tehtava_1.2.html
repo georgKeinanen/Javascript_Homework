@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript tulokset 1.2</title>
+</head>
+<body>
+    <H1>Js tehtävä 1.2: Nimen kysyminen</H1>
+    <p id='tulos'>Tääl on tekstiä</p>
+    <script>
+        'use strict';
+        let nimi=prompt("Anna nimi: ")
+        document.querySelector('#tulos').innerHTML = `Terve ${nimi}!`;
+    </script>
+</body>
+</html>

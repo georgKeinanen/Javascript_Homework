@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript tulos 2.2</title>
+</head>
+<h1>Js tehtävä 2.2: Osallistujat, mutta mihin?</h1>
+<ol id='osallistuja'></ol>
+<body>
+    <script>
+        'use strict';
+
+        const osallistuja=document.querySelector('#osallistuja')
+        const osallistuja_count=parseInt(prompt('Monta osallistujaa: '))
+        let osallistujat=[]
+        for (let i=1; i<=osallistuja_count; i++) {
+                osallistujat.push(prompt(`Anna ${i}. osallistujan nimi: `));
+            }
+        console.log(osallistujat);
+        osallistujat.sort()
+
+        for (let i of osallistujat)
+            {osallistuja.innerHTML+='<li>'+i+'</li>'}
+
+    </script>
+</body>
+</html>

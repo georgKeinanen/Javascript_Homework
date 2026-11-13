@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript tulos 1.7</title>
+</head>
+<body>
+    <h1>Js tehtävä 1.7: Heitä noppaa</h1>
+    <p id='target'></p>
+    <script>
+        'use strict';
+        let heitot=parseInt(prompt('Monta kertaa heität noppaa: '))
+        let pip_sum=0
+        for (let i=1; i <= heitot; i++)
+
+            {let pip_count = Math.floor(Math.random() * 6)
+            console.log(pip_count);
+            pip_sum+=pip_count}
+        document.querySelector('#target').innerHTML=`silmälukujen summa: ${pip_sum}`
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript tulos 1.5</title>
+</head>
+<body>
+<h1>JS tehtävä 1.5: Karkausvuosi</h1>
+    <p id='vuosi-bool'>Vastaus olisi täällä :P</p>
+    <script>
+        console.log('hello world');
+        //JS tehtävä 1.5: Karkausvuosi
+        let vuosi = parseInt(prompt('Anna vuosi: '));
+        if (vuosi%4===0)
+            {if ((vuosi%100===0) && (vuosi%400===0))
+            {document.querySelector('#vuosi-bool').innerHTML ='Antamasi vuosi: '+vuosi+' on karkausvuosi';}
+
+            else if ((vuosi%100===0) &&(vuosi%400!==0))
+                {document.querySelector('#vuosi-bool').innerHTML ='Antamasi vuosi: '+vuosi+' ei ole karkausvuosi';}
+
+            else {document.querySelector('#vuosi-bool').innerHTML ='Antamasi vuosi: '+vuosi+' on karkausvuosi';}
+        }
+
+
+        else {document.querySelector('#vuosi-bool').innerHTML ='Antamasi vuosi: '+vuosi+' ei ole karkausvuosi';}
+
+    </script>
+
+</body>
+</html>
