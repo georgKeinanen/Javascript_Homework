@@ -1,3 +1,5 @@
-let target=document.getElementById ('#target')
-let lista=document.createElement('li')
-target.appendChild (lista);
+'use strict';
+const target=document.querySelector('#target')
+target.innerHTML+='<li>'+'First item'+'</li>';
+target.innerHTML+='<li>'+'Second item'+'</li>';
+target.innerHTML+='<li>'+'Third item'+'</li>';
